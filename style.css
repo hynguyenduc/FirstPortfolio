@@ -49,7 +49,9 @@ article > ul > li > a {
     margin: 5vw;
     border-radius: 25px;
     background-color: white;
+    /* overflow: hidden; */
 }
+
 
 .blog > p {
     margin-bottom: 2%;
@@ -59,11 +61,16 @@ article > ul > li > a {
     font-size: 2em;
 }
 
+/* .blogpage {
+        scroll-padding-top: 50rem;
+} */
+
 .subheading {
     margin-bottom: 5%;
 }
 
 .blog > img {
+
     margin-top: 5%;
     max-width: 50%;
     max-height: 50%;
@@ -121,7 +128,13 @@ h1, h2 {
     text-decoration: underline;
 }
 
+html {
+    scroll-padding-top: 7rem;
+}
+
+
 main {
+
     padding-bottom: 2.5rem;
 }
 
@@ -129,7 +142,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 5%;
-
 }
 
 nav > a:nth-of-type(n) {
@@ -145,9 +157,7 @@ nav > a:nth-of-type(n) {
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
-
 }
-
 
 .socials > a > img {
     max-width: 10vw;
