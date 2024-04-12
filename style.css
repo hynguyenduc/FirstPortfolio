@@ -11,6 +11,11 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: gray;
+}
+
+
 #updates, #hobbies, #traits {
     display: flex;
     flex-direction: column;
