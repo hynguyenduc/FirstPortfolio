@@ -11,9 +11,10 @@ a {
     font-weight: bold;
 }
 
-#updates, #hobbies {
+#updates, #hobbies, #traits {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 2px solid black;
     padding: 5vw;
     padding-left: 30vw;
@@ -22,6 +23,15 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+}
+
+#skills {
+    border: 2px solid black;
+    padding: 5vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    margin: 5vw;
+    border-radius: 25px;
 }
 
 article > ul > li > a {
@@ -37,7 +47,11 @@ article > ul > li > a {
 }
 
 .blog > p {
-    margin-bottom: .5%;
+    margin-bottom: 2%;
+}
+
+.bloglink {
+    font-size: 2em;
 }
 
 .subheading {
@@ -45,6 +59,7 @@ article > ul > li > a {
 }
 
 .blog > img {
+    margin-top: 5%;
     max-width: 50%;
     max-height: 50%;
 }
@@ -53,11 +68,6 @@ article > ul > li > a {
     background-color: black;
     color: white;
 }
-
-/* .hamburger {
-    background-color: blue;
-} */
-
 
 .banner {
     background-color: black;
@@ -74,6 +84,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 2.5rem;
     
 
 }
@@ -88,7 +99,7 @@ h1, h2 {
 }
 
 main {
-    margin-bottom: 40%;
+    padding-bottom: 2.5rem;
 }
 
 nav {
@@ -137,5 +148,8 @@ nav > a:nth-of-type(n) {
         display: flex;
         flex-direction: column;
         position: relative;
+        min-height: 100vh;
     }
 }
+
+
