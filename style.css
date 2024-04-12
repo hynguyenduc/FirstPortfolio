@@ -6,7 +6,9 @@
 
 a {
     font-style: italic;
-    fo
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 article {
@@ -36,10 +38,17 @@ article {
     background-color: blue;
 } */
 
-header {
+
+.banner {
     background-color: black;
     color: white;
 }
+
+header {
+    position: sticky;
+    top: 0;   
+}
+
 
 nav {
     /* display: inline-block; */
@@ -48,16 +57,18 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 5%;
+
 }
 
 nav > a:nth-of-type(n) {
     text-align: center;
     border: 2px solid black;
     padding: 10px;
+    background-color: white;
 }
 
 @media only screen and (max-width: 500px) {
-    header > p {
+    header > a > .banner > p {
         /* display: none; */
         font-weight: bold;
         font-style: italic;
