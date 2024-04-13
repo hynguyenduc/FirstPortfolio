@@ -15,29 +15,14 @@ a:hover {
     color: gray;
 }
 
-
-#updates, #hobbies, #traits {
+.blog > ul {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    padding: 5vw;
-    padding-left: 30vw;
-    padding-right: 30vw;
-    margin: 5vw;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
+    padding-left: 25vw;
+    padding-right: 25vw;
+
 }
 
-#skills {
-    border: 2px solid black;
-    padding: 5vw;
-    padding-left: 30vw;
-    padding-right: 30vw;
-    margin: 5vw;
-    border-radius: 25px;
-}
 
 article > ul > li > a {
     color: white;
@@ -52,31 +37,35 @@ article > ul > li > a {
     /* overflow: hidden; */
 }
 
-
 .blog > p {
     margin-bottom: 2%;
 }
 
 .bloglink {
     font-size: 2em;
+    color: white;
 }
-
-/* .blogpage {
-        scroll-padding-top: 50rem;
-} */
 
 .subheading {
     margin-bottom: 5%;
 }
 
-.blog > img {
-
+a > img {
     margin-top: 5%;
     max-width: 50%;
     max-height: 50%;
 }
 
 .blog:nth-of-type(even) {
+    background-color: black;
+    color: white;
+}
+
+.blogtitle:active {
+    color: gray;
+}
+
+.blogtitle {
     background-color: black;
     color: white;
 }
@@ -99,6 +88,10 @@ footer {
     padding-bottom: 5%;
     padding-top: 5%;
     background-color: white;
+}
+
+.grayout:hover {
+    color: gray;
 }
 
 .end {
