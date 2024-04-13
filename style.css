@@ -156,9 +156,10 @@ nav > a:nth-of-type(n) {
 }
 
 /* media query for tablets */
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1200px and min-height:900px) {
     body{
         font-size: x-large;
+        background-color: blue;
     }
 
     h1 {
@@ -241,15 +242,41 @@ nav > a:nth-of-type(n) {
 }
 
 /* media query for desktops and laptops */
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1300px) {
     body{
-    background-color: red;
+ 
     }
 
     a {
         font-size: 7.5vh;
     }
 
+    .aboutblog {
+        display: grid;
+        grid-template-columns: repeat(2,vw);
+        grid-template-rows: repeat(2, 40vw%);
+        justify-items: center;
+    }
+
+    .aboutme {
+        width: 40vw;
+    }
+
+    #hobbies {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end: 3;
+
+    }
+
+    #traits {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start:1;
+        grid-row-end: 2;
+
+    }
 
     header > a > .banner > p { 
         font-size: 10vh;
@@ -259,7 +286,7 @@ nav > a:nth-of-type(n) {
 
     .homepage {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
         justify-items: center;
        }
@@ -269,10 +296,9 @@ nav > a:nth-of-type(n) {
     .intro {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin-left: 25%;
+        /* width: 100%;
+        margin-left: 100%;  */
     }
-
 
     .oldpc {
         display: flex;
@@ -285,25 +311,29 @@ nav > a:nth-of-type(n) {
     }
 
     .updates {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start:1;
-        grid-row-end: 3;
-        width: 40%;
-        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 60%;
+ 
     }
 
     .blog > ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        
+        padding-left: 0;
+        padding-right: 0;
+
 
     }
 
     .blog > ul > li{
         font-size: 2vh;
-        padding: 10%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     h2, h3 {
@@ -313,12 +343,43 @@ nav > a:nth-of-type(n) {
         
     }
 
+    h4 {
+        font-size: 3vh;
+    }
+
     h1 {
         font-size: 9vh;
         padding-bottom: 5vh;
     }
 
     p {
-        font-size: 2.5vh;
+        font-size: 3vh;
+        padding-bottom: 10%;
+    }
+
+    .socials {
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        
+    }
+
+    .socials > a > img {
+        max-width: 3vw;
+        margin-top: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+   
+    }
+
+    footer {
+        padding: 0.5%;
+    }
+
+    footer > p {
+        padding-bottom: 0;
+    }
+
+    .lists > ul > li {
+        font-size: 3vh;
     }
 }
