@@ -197,26 +197,11 @@ nav > a:nth-of-type(n) {
         max-height: 20vh;
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .intro:first-child() {
-        width: 100%;
-        text-align: center;
-    }
-
-    .oldpc {
-        display:contents;
-        filter: grayscale(100);
-        border-radius: 50%;
-    }
-
-    .oldpc > img {
-        margin-top: 10%;
-        border-radius: 50% / 100%;
-        max-height: 40vw;
-        border: 2px solid black;
-
-    }
     .socials {
         padding-top: 1%;
         padding-bottom: 1%;
@@ -243,9 +228,9 @@ nav > a:nth-of-type(n) {
 
 /* media query for desktops and laptops */
 @media only screen and (min-width:1300px) {
-    body{
- 
-    }
+    /* body{
+        background-color: red;
+    } */
 
     a {
         font-size: 7.5vh;
@@ -296,6 +281,8 @@ nav > a:nth-of-type(n) {
     .intro {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+
         /* width: 100%;
         margin-left: 100%;  */
     }
