@@ -23,11 +23,6 @@ a:hover {
 
 }
 
-
-article > ul > li > a {
-    color: white;
-}
-
 .blog {
     border: 2px solid black;
     padding: 5vw;
@@ -155,4 +150,41 @@ nav > a:nth-of-type(n) {
 .socials > a > img {
     max-width: 10vw;
     filter: saturate(0%)
+}
+
+@media only screen and (min-width:1024px) {
+    body{
+        background-color: blue;
+        font-size: x-large;
+    }
+
+    .aboutblog{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+    }
+    
+    .blog {
+        padding: 1.5rem;
+        margin: 1rem;
+        display: grid;
+        justify-content: center;
+    }
+
+    .socials {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        
+    }
+
+    .socials > a > img {
+        max-width: 2.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 1%;
+    }
+
+    footer {
+        padding: 2%;
+    }
 }
