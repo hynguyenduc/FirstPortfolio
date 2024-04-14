@@ -315,6 +315,10 @@ nav > a:nth-of-type(n) {
 
 
     }
+    .blogpage {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .blog > ul > li{
         font-size: 2vh;
