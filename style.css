@@ -1,11 +1,12 @@
 /* Default for mobile */
-/*  */
+/* Resets the styling to net zero */
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Gives the links some design flair to separate it from normal text */
 a {
     font-style: italic;
     text-decoration: none;
@@ -13,31 +14,34 @@ a {
     font-weight: bold;
 }
 
+/* Another design flair to further draw attention to links being a link */
 a:hover {
     color: gray;
 }
 
+/* Centers lists in their container */
 .blog > ul {
     display: flex;
     flex-direction: column;
     padding-left: 25vw;
     padding-right: 25vw;
-
 }
 
+/* Sets up styling for the general content container */
 .blog {
     border: 2px solid black;
     padding: 5vw;
     margin: 5vw;
     border-radius: 25px;
     background-color: white;
-    /* overflow: hidden; */
 }
 
+/* Better spacing between paragraphs */
 .blog > p {
     margin-bottom: 2%;
 }
 
+/* Styling (size and color) of links on the list on the updates container */
 .bloglink {
     font-size: 2em;
     color: white;
@@ -47,17 +51,21 @@ a:hover {
     margin-bottom: 5%;
 }
 
+
+/* Styling for the Social links */
 a > img {
     margin-top: 5%;
     max-width: 50%;
     max-height: 50%;
 }
 
+/* Styling for alternating content containers */
 .blog:nth-of-type(even) {
     background-color: black;
     color: white;
 }
 
+/* Allows for active links to change color to indicate its purpose as link when hovered over */
 .blogtitle:active {
     color: gray;
 }
@@ -72,6 +80,7 @@ a > img {
     color: white;
 }
 
+/* General styling of content containers inside the body */
 body {
     text-align: center;
     background-color: gray;
@@ -81,6 +90,7 @@ body {
     min-height: 86vh;
 }
 
+/* Styling for footer content */
 footer {
     padding-bottom: 5%;
     padding-top: 5%;
@@ -103,8 +113,8 @@ header {
     top: 0;   
 }
 
+/* Styling for text in banner (my name) */
 header > a > .banner > p {
-    /* display: none; */
     font-weight: bold;
     font-style: italic;
     font-size: 2rem;
@@ -116,31 +126,23 @@ h1, h2 {
     text-decoration: underline;
 }
 
-html {
-    scroll-padding-top: 7rem;
-}
-
-
 main {
-
     padding-bottom: 2.5rem;
 }
 
+/* Spaces out the navbar link options evenly, according the available screen width */
 nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 5%;
 }
 
+/* Styling and position of navbar link text */
 nav > a:nth-of-type(n) {
     text-align: center;
     border: 2px solid black;
     padding: 10px;
     background-color: white;
-}
-
-.oldpc {
-    display: none;
 }
 
 .socials {
@@ -156,11 +158,11 @@ nav > a:nth-of-type(n) {
     filter: saturate(0%)
 }
 
-/* media query for tablets */
+/* media query for tablets, specifically the portrait mode*/
 @media only screen and (min-width:900px) and (min-height:1200px) {
-    body{
+    /* body{
         background-color: blue;
-    }
+    } */
 
     .blog > a > img {
         margin-top: 0;
@@ -204,8 +206,7 @@ nav > a:nth-of-type(n) {
 
     .socials {
         padding-top: 2%;
-        padding-bottom: 2%;
-        
+        padding-bottom: 2%; 
     }
 
     .socials > a > img {
@@ -225,35 +226,32 @@ nav > a:nth-of-type(n) {
 
 }
 
-/* media query for desktops and laptops */
+/* media query for desktops and laptops (landscape specifically) */
 @media only screen and (min-width:1300px) and (orientation:landscape) {
-    body{
-        background-color: red;
-    }
-
     a {
         font-size: 7.5vh;
     }
 
+    /* Applies a grid framework for the containers in the "about" page  */
     .aboutblog {
         display: grid;
         grid-template-columns: repeat(2,vw);
-        grid-template-rows: repeat(2, 40vw%);
+        grid-template-rows: repeat(2, 20vw%);
         justify-items: center;
+
     }
 
     .aboutme {
         width: 40vw;
     }
-
+/* Positions hobbies container bottom left */
     #hobbies {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:2;
         grid-row-end: 3;
-
     }
-
+/* Positions traits container top right */
     #traits {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -263,24 +261,25 @@ nav > a:nth-of-type(n) {
     }
 
     header > a > .banner > p { 
-        font-size: 10vh;
-        padding-top: 7.5vh;
-        padding-bottom: 5vh;
+        font-size: 7vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .homepage {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr;
+        grid-template-rows: 100%;
         justify-items: center;
-       }
+        align-items: center;
+    }
 
-      
-       
+       /* Centers the content in the intro container */
     .intro {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-height: 50%;
     }
 
     .updates {
@@ -288,6 +287,7 @@ nav > a:nth-of-type(n) {
         flex-direction: column;
         justify-content: flex-start;
         width: 60%;
+       
     }
 
     .blog > a > img {
