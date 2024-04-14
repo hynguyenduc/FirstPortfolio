@@ -39,13 +39,17 @@ The end result is similar to the initial design.
 
 ## Functionality, features and components
 
-Banner: contains img and link elements to act like another homepage button. It is pinned to the top of the page, even when you scroll down the page on phones/tablets. When the home page has more content i.e. more updates posted, it would serve as a easy to click function to take the user to the home/index page.
+Banner: contains link element on the whole container to act like another homepage button. It is pinned to the top of the page, even when you scroll down the page on phones/tablets. When the home page has more content i.e. more updates posted, it would serve as a easy to click function to take the user to the home/index page. It is styled as a whole block to draw attention to it.
 
-Blog: contains headings, img and/or paragraph elements to house content. The blogs with img have a link to open up a more high quality version, if appicable. Its just a simple display for content, and the black and white alternating color scheme add contrast to draw in the user's eye. It can also house a smaller image to draw user's attention.
+Blog: contains headings, img and/or paragraph elements to house content. The blogs with img have a link to open up a more high quality version, if appicable. Its just a simple display for content, with a clear defined black border to separate it from the gray background. The black and white alternating color scheme add contrast to further differentiate the content. It can also house a smaller image to draw user's attention.
 
-Navigation Bar: contains links and spaced evenly with css grid. Sticky positioned to top of page, even when you scroll down the page on phones/tablets. Makes all the pages permanently in sight of the user to help with browsing the site.
+Navigation Bar: contains links and spaced evenly with css grid. Sticky positioned to top of page, even when you scroll down the page on phones/tablets. Makes all the pages permanently in sight of the user to help with browsing the site. When hovered over with a mouse, it turns gray to indicate it is a link
 
 Social: contains links and img elements. This is always at the end of the page. The icons are clickable links that take the user to my Github and LinkedIn if they want to see my work/work history. The links open into a different tab, so the user can still continue browsing the portfolio. Remains at bottom of the page no matter how long the content (more so for the mobile version). Just links user to more official sources of my work/work history.
+
+Im not good with colours, so I aimed for a black and white palette, which would offer the most contrast, with a gray background to blur the colors together.
+
+I also tried to style the layout to the screen size, which phones sporting more of a column design, because it would be easier to follower along with than a horizontal layout, which was the approach for the landscape screens.
 
 ## Github REPO
 https://github.com/taijitsuhitsyou/FirstPortfolio
